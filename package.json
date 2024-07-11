@@ -2,8 +2,9 @@
   "name": "github-scout-bot",
   "version": "1.0.0",
   "description": "GitHubScoutBot is a Telegram bot designed to fetch and display information about GitHub users, including their repositories, contributions, and more. Easily access detailed profiles and activity stats with simple commands directly within Telegram.",
-  "main": "app.ts",
+  "main": "src/bot.ts",
   "scripts": {
+    "dev": "npx ts-node -r dotenv/config src/bot.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,12 @@
   },
   "homepage": "https://github.com/GeekyGeeky/github-scout-bot#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "grammy": "^1.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
   }
 }
